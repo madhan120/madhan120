@@ -1,0 +1,20 @@
+num=int(input())
+temp=num
+c=0
+while(num>0):
+    c=c+1
+    num//=10
+num=temp
+sum=0
+    
+
+
+while(temp>0):
+    digi=temp%10
+    sum=sum+digi**c
+    temp//=10
+if sum==num:
+    print("number is armstrong number")
+else:
+    print("not an armstromg number")
+    
