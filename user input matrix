@@ -19,3 +19,16 @@ for i in range(R):
 	for j in range(C):
 		print(matrix[i][j], end = " ")
 	print()
+
+
+
+
+linear
+
+
+
+# one-liner logic to take input for rows and columns
+C=int(input("no of coloums"))
+R=int(input("no of rows"))
+mat = [[int(input()) for x in range (C)] for y in range(R)]
+print(mat)
