@@ -1,0 +1,7 @@
+n=int(input())
+m=int(input())
+for i in range(max(n,m),n*m+1):
+    if i%m==i%n==0:
+        lcm=i
+        break
+print(i)
