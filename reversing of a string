@@ -1,0 +1,11 @@
+#reversing a string 
+i=input()
+a=i[::-1]
+print(a)
+
+#without using direct method
+l=[]
+for s in range(1,len(i)+1):
+    l.append(i[-s])     #appending into the empty list
+d=','.join(l)             #converting list to string
+print(d)
