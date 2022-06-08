@@ -1,0 +1,8 @@
+li=list(map(int,input()))
+a=[]
+a=list(set(li))
+print(a)
+li.sort()
+
+#print(li)
+print(a[-2])
