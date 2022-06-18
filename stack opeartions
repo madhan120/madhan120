@@ -8,9 +8,12 @@ while True:
         stack.append(element)
         print(stack)
     if choice==2:
-        e=stack.pop()
-        print("Removed element: ",e)
-        print(stack)
+        if len(stack)==0:
+            print("stack is empty")
+        else:    
+            e=stack.pop()
+            print("Removed element: ",e)
+            print(stack)
     if choice==3:
         break
 else:
