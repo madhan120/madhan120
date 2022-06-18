@@ -1,0 +1,20 @@
+
+stack = []
+while True: 
+    print("enter your choice 1.push 2.pop 3.quit:")
+    choice=int(input())
+    if choice==1:
+        element=int(input("enter the element:"))
+        stack.append(element)
+        print(stack)
+    if choice==2:
+        e=stack.pop()
+        print("Removed element: ",e)
+        print(stack)
+    if choice==3:
+        break
+else:
+    print("enter correct choice")
+        
+    
+    
