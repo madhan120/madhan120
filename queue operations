@@ -1,0 +1,19 @@
+queue=[]
+while True:
+    choice=int(input("enter the choice 1.enqueue 2.dequeue 3.quit :"))
+    if choice==1:
+        element=int(input("enter the element:"))
+        queue.append(element)
+        print(queue)
+    if choice==2:
+        if len(queue)==0:
+            print("queue is empty")
+        else:
+            e=queue.pop(0)
+            print("dequeued element:",e)
+            print(queue)
+    if choice==3:
+        break
+else:
+    print("enter correct choice")
+            
