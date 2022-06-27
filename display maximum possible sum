@@ -1,0 +1,14 @@
+n=int(input())
+a=list(map(int,input().split()))
+b=int(input())
+#c=list(a)
+d=[]
+for i in range(b):
+  d.append(max(a))
+  a.remove(max(a))
+print(d)  
+e=0  
+for k in d:
+  e=e+int(k)
+print(e)  
+  
