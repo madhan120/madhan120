@@ -1,0 +1,9 @@
+n=9
+b=bin(n)
+b=b[2:]
+if b==b[::-1]:
+    print(True)
+else:
+    print(False)
+print(b)
+print(b[::-1])
