@@ -1,0 +1,6 @@
+n="madhankumar"
+l={}
+for i in n:
+    k=n.count(i)
+    l[i]=k #adding elements to dictionary
+print(l)    #doesnt take duplicates
