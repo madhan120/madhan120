@@ -1,0 +1,9 @@
+s=input()
+t=""
+for j in s:
+    if j not in t:
+        t=t+j 
+    else:
+        pass
+        
+print(t)
