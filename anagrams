@@ -1,0 +1,9 @@
+'''
+s1=input()
+s2=input()
+k=sorted(s1)
+h=sorted(s2)
+if k==h:
+    print("anagrams")
+else:
+    print("not anagrams")
