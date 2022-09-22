@@ -1,0 +1,18 @@
+l=list(map(int,input().split(",")))
+l.sort()
+temp=l[0]
+c=1
+le=[]
+for j in range(1,len(l)):
+    if temp+1==l[j]:
+        c=c+1
+        temp=l[j]
+    else:
+        le.append(c)
+        temp=l[j]
+if len(le)==0:
+    print(c)
+elif max(le)==1:
+    print("no consecs")
+else:
+    print(max(le))
