@@ -1,0 +1,20 @@
+queries=list(map(int,input().split(",")))
+k=int(input())
+i=10**(k-1)
+l=[]
+la=[]
+for j in range(i,i*10):
+    h=str(j)
+    if h[::-1]==h:
+        l.append(h)
+for m in queries:
+    la.append(l[m-1])
+print(la)   
+
+
+Input: queries = [1,2,3,4,5,90], intLength = 3
+Output: [101,111,121,131,141,999]
+Explanation:
+The first few palindromes of length 3 are:
+101, 111, 121, 131, 141, 151, 161, 171, 181, 191, 202, ...
+The 90th palindrome of length 3 is 999.
