@@ -1,0 +1,33 @@
+s=input()
+n=len(s)
+l=0
+m=[]
+p={}
+o=[]
+if n==1:
+    print(s)
+for j in range(n-1):
+    l=l+1
+    for k in range(n-l):
+        m.append(s[k:k+l+1])
+for j in range(len(m)):
+    if m[j][::-1]==m[j]:
+        p[len(m[j])]=m[j]
+        o.append(len(m[j]))  
+if len(o)==0:
+    print(s[0])
+else:    
+    print(p[max(o)])
+    
+    
+ Example 1:
+
+Input: s = "babad"
+Output: "bab"
+Explanation: "aba" is also a valid answer.
+
+
+Example 2:
+
+Input: s = "cbbd"
+Output: "bb"
